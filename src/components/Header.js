@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 const Header = () => {
     return (
-        <div>
+       <div>
 
-        </div>
+       </div>
     );
 };
 
