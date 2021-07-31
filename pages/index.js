@@ -20,15 +20,15 @@ export default function Home() {
 
                 <input type="text" id="Search" placeholder="Search" className="placeholder-white h-9 w-30 bg-gray-800 border border-gray-500 border-opacity-75 rounded-l-xl outline-none px-3 text-white ml-6"/>
 
-                <div className="h-9 w-30 border border-gray-500 border-opacity-75 px-3 bg-gray-800 items-center flex">
+                <div className="h-9 w-30 border border-gray-500 border-opacity-75 px-3 bg-gray-800 justify-center items-center flex">
                         <div className="text-white mr-3">categories</div>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                 </div>
 
-                <div className="bg-yellow-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                <div className="bg-yellow-500 h-9 w-10 items-center flex rounded-r-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-1" fill="none" viewBox="0 0 24 24" stroke="white">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                 </div>
