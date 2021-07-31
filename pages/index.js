@@ -8,7 +8,9 @@ export default function Home() {
         <link rel="icon" href="/amazon-2.png" />
       </Head>
 
-          <h1>Hello World 🚀</h1>
+          <div className="bg-white w-full">
+
+          </div>
     </div>
   )
 }
