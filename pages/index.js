@@ -3,7 +3,7 @@ import Header from "../src/components/Header";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="">
       <Head>
         <title>Amazon 2.2 App</title>
         <link rel="icon" href="/amazon-2.png" />
