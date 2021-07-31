@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Header from "../src/components/Header";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       </Head>
 
           <div className="bg-white w-full">
+                <Header />
 
           </div>
     </div>
