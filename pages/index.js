@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Header from "../src/components/Header";
 import React from "react";
 
 export default function Home() {
@@ -10,10 +9,13 @@ export default function Home() {
         <link rel="icon" href="/amazon-2.png" />
       </Head>
 
-          <div className="">
-                <Header />
+              <div className="h-16 bg-gray-900	">
+                  <div className="w-1/5 h-16">
+                      <img className="" src="https://www.pinclipart.com/picdir/big/57-576184_view-our-amazon-storefront-amazon-logo-white-png.png" />
+                  </div>
+              </div>
+                {/*<Header />*/}
 
-          </div>
     </div>
   )
 }
