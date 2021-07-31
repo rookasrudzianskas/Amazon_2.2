@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import React from "react";
 import Header from "../src/components/Header";
+import Sidebar from "../src/components/Sidebar";
+import Section from "../src/components/Section";
 // import Header from "../src/components/Header";
 const jdenticon = require("jdenticon");
 
@@ -20,6 +22,17 @@ export default function Home() {
 
         <div className="">
             <Header />
+
+            <div className="h-screen flex">
+
+                <div className="w-1/5 bg-gray-900">
+                    <Sidebar />
+                </div>
+
+                <div>
+                    <Section />
+                </div>
+            </div>
         </div>
 
     </div>
