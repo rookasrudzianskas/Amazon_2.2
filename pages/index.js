@@ -12,6 +12,7 @@ export default function Home() {
     const value = "Rokas";
     // const png = jdenticon.toPng(value, size);
     // const png = jdenticon.toPng(value, size);
+    // const png = jdenticon.toPng(value, size);
 
 
     return (
