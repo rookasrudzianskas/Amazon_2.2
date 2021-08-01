@@ -17,6 +17,7 @@ export default function Home() {
     // const png = jdenticon.toPng(value, size);
     // const png = jdenticon.toPng(value, size);
     // const png = jdenticon.toPng(value, size);
+    // const png = jdenticon.toPng(value, size);
 
 
     return (
