@@ -11,6 +11,7 @@ export default function Home() {
     const size = 200;
     const value = "Rokas";
     // const png = jdenticon.toPng(value, size);
+    // const png = jdenticon.toPng(value, size);
 
 
     return (
@@ -25,7 +26,7 @@ export default function Home() {
 
             <div className="h-screen flex">
 
-                <div className="w-1/5 bg-gray-900">
+                <div className="w-1/5 bg-gray-900 border-gray-700 border-t-2">
                     <Sidebar />
                 </div>
 
