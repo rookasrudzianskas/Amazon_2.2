@@ -5,7 +5,9 @@ const Sidebar = () => {
         <div>
             <div className="w-1/5 bg-gray-900">
                 <div>
+                    <div className="text-yellow-500 cursor-pointer">
 
+                    </div>
                 </div>
             </div>
         </div>
