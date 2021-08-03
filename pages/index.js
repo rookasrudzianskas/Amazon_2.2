@@ -67,6 +67,16 @@ export default function Home() {
                                 <span className="">Fashion</span>
                             </div>
 
+                            <div className="text-white cursor-pointer flex mb-3 font-bold">
+                                <span className="w-11"/>
+                                <span className="">Sell on Amazon</span>
+                            </div>
+
+                            <div className="text-white cursor-pointer flex mb-3 font-bold">
+                                <span className="w-11"/>
+                                <span className="">Help</span>
+                            </div>
+
 
                         </div>
                     </div>
