@@ -31,7 +31,7 @@ export default function Home() {
                 </div>
                 <div className="flex-1 p-6">
                     {/*<Section />*/}
-                    <div className="h-44 w-full main-section-banner">
+                    <div className="h-44 w-full main-section-banner rounded-lg">
                     </div>
                 </div>
             </div>
