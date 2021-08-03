@@ -41,6 +41,33 @@ export default function Home() {
                                 <span className="w-11"/>
                                 <span className="">Echo and Alexa</span>
                             </div>
+
+                            <div className="text-white cursor-pointer flex font-bold">
+                                <span className="w-11"/>
+                                <span className="">Kindle</span>
+                            </div>
+
+                            <div className="text-white cursor-pointer flex font-bold">
+                                <span className="w-11"/>
+                                <span className="">Books</span>
+                            </div>
+
+                            <div className="text-white cursor-pointer flex font-bold">
+                                <span className="w-11"/>
+                                <span className="">Electronics</span>
+                            </div>
+
+                            <div className="text-white cursor-pointer flex font-bold">
+                                <span className="w-11"/>
+                                <span className="">Home and Garden</span>
+                            </div>
+
+                            <div className="text-white cursor-pointer flex font-bold">
+                                <span className="w-11"/>
+                                <span className="">Fashion</span>
+                            </div>
+
+
                         </div>
                     </div>
 
