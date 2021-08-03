@@ -143,11 +143,11 @@ export default function Home() {
                                 </div>
 
                                 <div className="product-rating">
-                                    ⭐⭐⭐⭐⭐⭐
+                                    ⭐⭐⭐⭐⭐⭐ 6.5
                                 </div>
 
                                 <div className="product-price">
-                                    $4567
+                                    $4567.000
                                 </div>
                             </div>
                         </div>
