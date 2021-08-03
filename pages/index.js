@@ -32,8 +32,8 @@ export default function Home() {
                 <div className="flex-1 p-6">
                     {/*<Section />*/}
                     <div className="h-44 w-full main-section-banner rounded-lg flex items-end">
-                        <div className="button bg-white w-36 h-10 rounded-full flex justify-center items-center ml-4 cursor-pointer">
-                            Browse Products
+                        <div className="button bg-white w-36 h-10 m-4 rounded-full flex justify-center items-center ml-4 cursor-pointer">
+                            <h4 className="text-bold text-yellow-500">Browse Products</h4>
                         </div>
                     </div>
                 </div>
