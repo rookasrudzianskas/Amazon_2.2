@@ -31,8 +31,8 @@ export default function Home() {
                 </div>
                 <div className="flex-1 p-6">
                     {/*<Section />*/}
-                    <div className="h-44 w-full main-section-banner rounded-lg">
-                        <div className="button bg-white w-36 h-10 rounded-full flex justify-center items-center ml-4">
+                    <div className="h-44 w-full main-section-banner rounded-lg flex items-end">
+                        <div className="button bg-white w-36 h-10 rounded-full flex justify-center items-center ml-4 cursor-pointer">
                             Browse Products
                         </div>
                     </div>
