@@ -36,6 +36,15 @@ export default function Home() {
                             <h4 className="text-bold text-yellow-500">Browse Products</h4>
                         </div>
                     </div>
+
+                    <div className="">
+
+                    </div>
+
+                    <div className="">
+
+                    </div>
+
                 </div>
             </div>
         </div>
