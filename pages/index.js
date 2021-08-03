@@ -14,7 +14,7 @@ export default function Home() {
 
 
     return (
-    <div className="bg-white w-full">
+    <div className="bg-white w-full h-screen overflow-hidden">
       <Head>
         <title>Amazon 2.2 App</title>
         <link rel="icon" href="/amazon-2.png" />
@@ -23,9 +23,9 @@ export default function Home() {
         <div className="">
             <Header />
 
-            <div className="h-screen flex">
+            <div className="h-screen flex ">
 
-                <div className="w-1/5 bg-gray-900 border-gray-700 border-t-2  p-6">
+                <div className="w-1/5 bg-gray-900 border-gray-700 border-t-2  p-6 overflow-hidden">
                         <div className="">
                             <div className="text-yellow-500 cursor-pointer flex items-center font-bold mb-4 p-2">
                         <span className="w-8 mr-1">
@@ -37,32 +37,32 @@ export default function Home() {
                                 <span className="">Categories</span>
                             </div>
 
-                            <div className="text-white cursor-pointer flex mb-2">
+                            <div className="text-white cursor-pointer flex mb-3">
                                 <span className="w-11"/>
                                 <span className="">Echo and Alexa</span>
                             </div>
 
-                            <div className="text-white cursor-pointer flex mb-2">
+                            <div className="text-white cursor-pointer flex mb-3">
                                 <span className="w-11"/>
                                 <span className="">Kindle</span>
                             </div>
 
-                            <div className="text-white cursor-pointer flex mb-2">
+                            <div className="text-white cursor-pointer flex mb-3">
                                 <span className="w-11"/>
                                 <span className="">Books</span>
                             </div>
 
-                            <div className="text-white cursor-pointer flex mb-2">
+                            <div className="text-white cursor-pointer flex mb-3">
                                 <span className="w-11"/>
                                 <span className="">Electronics</span>
                             </div>
 
-                            <div className="text-white cursor-pointer flex mb-2">
+                            <div className="text-white cursor-pointer flex mb-3">
                                 <span className="w-11"/>
                                 <span className="">Home and Garden</span>
                             </div>
 
-                            <div className="text-white cursor-pointer flex mb-2">
+                            <div className="text-white cursor-pointer flex mb-3">
                                 <span className="w-11"/>
                                 <span className="">Fashion</span>
                             </div>
