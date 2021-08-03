@@ -29,10 +29,9 @@ export default function Home() {
                 <div className="w-1/5 bg-gray-900 border-gray-700 border-t-2  p-6 overflow-hidden">
                     <Sidebar />
                 </div>
-                <div>
+                <div className="flex-1">
                     {/*<Section />*/}
-                    <div className="h-44">
-                        <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_45M_v2_1x._CB432458380_.jpg" alt=""/>
+                    <div className="h-44 w-full main-section-banner">
                     </div>
                 </div>
             </div>
