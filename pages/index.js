@@ -132,7 +132,7 @@ export default function Home() {
                         <div className="">
                             <div className="main-product ">
                                 <div className="product-image w-48 h-52 bg-white rounded-lg flex items-center justify-center">
-                                    <img src="https://m.media-amazon.com/images/I/61-PblYntsL._AC_SL1500_.jpg" className="" alt=""/>
+                                    <img src="https://m.media-amazon.com/images/I/61-PblYntsL._AC_SL1500_.jpg" className="p-4" alt=""/>
                                 </div>
 
                                 <div className="product-name">
