@@ -130,7 +130,11 @@ export default function Home() {
                         <h1 className="text-2xl font-bold text-gray-700 mb-5 mt-10">Hot Deals 🚀</h1>
 
                         <div className="">
-                            
+                            <div className="main-product ">
+                                <div className="product-image">
+
+                                </div>
+                            </div>
                         </div>
                     </div>
 
