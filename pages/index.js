@@ -29,7 +29,7 @@ export default function Home() {
                 <div className="w-1/5 bg-gray-900 border-gray-700 border-t-2  p-6 overflow-hidden">
                     <Sidebar />
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 p-6">
                     {/*<Section />*/}
                     <div className="h-44 w-full main-section-banner">
                     </div>
