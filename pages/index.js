@@ -29,6 +29,9 @@ export default function Home() {
                 <div className="w-1/5 bg-gray-900 border-gray-700 border-t-2  p-6 overflow-hidden">
                     <Sidebar />
                 </div>
+                <div>
+                    <Section />
+                </div>
             </div>
         </div>
 
