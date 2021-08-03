@@ -37,32 +37,32 @@ export default function Home() {
                                 <span className="">Categories</span>
                             </div>
 
-                            <div className="text-white cursor-pointer flex font-bold">
+                            <div className="text-white cursor-pointer flex mb-2">
                                 <span className="w-11"/>
                                 <span className="">Echo and Alexa</span>
                             </div>
 
-                            <div className="text-white cursor-pointer flex font-bold">
+                            <div className="text-white cursor-pointer flex mb-2">
                                 <span className="w-11"/>
                                 <span className="">Kindle</span>
                             </div>
 
-                            <div className="text-white cursor-pointer flex font-bold">
+                            <div className="text-white cursor-pointer flex mb-2">
                                 <span className="w-11"/>
                                 <span className="">Books</span>
                             </div>
 
-                            <div className="text-white cursor-pointer flex font-bold">
+                            <div className="text-white cursor-pointer flex mb-2">
                                 <span className="w-11"/>
                                 <span className="">Electronics</span>
                             </div>
 
-                            <div className="text-white cursor-pointer flex font-bold">
+                            <div className="text-white cursor-pointer flex mb-2">
                                 <span className="w-11"/>
                                 <span className="">Home and Garden</span>
                             </div>
 
-                            <div className="text-white cursor-pointer flex font-bold">
+                            <div className="text-white cursor-pointer flex mb-2">
                                 <span className="w-11"/>
                                 <span className="">Fashion</span>
                             </div>
