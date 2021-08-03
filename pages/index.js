@@ -132,7 +132,22 @@ export default function Home() {
                         <div className="">
                             <div className="main-product ">
                                 <div className="product-image">
+                                    <img src="https://m.media-amazon.com/images/I/61-PblYntsL._AC_SL1500_.jpg" className="" alt=""/>
+                                </div>
 
+                                <div className="product-name">
+                                    Nintendo Switch(2020)
+                                </div>
+                                <div className="product-make">
+                                    nintendo Inc.
+                                </div>
+
+                                <div className="product-rating">
+                                    ⭐⭐⭐⭐⭐⭐
+                                </div>
+
+                                <div className="product-price">
+                                    $4567
                                 </div>
                             </div>
                         </div>
