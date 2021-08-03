@@ -64,10 +64,6 @@ const Sidebar = () => {
 
 
                 </div>
-
-            <div>
-                <Section />
-            </div>
         </div>
     );
 };
