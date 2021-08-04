@@ -127,8 +127,11 @@ const Cart = () => {
                 </div>
             </div>
 
+
         </div>
     );
 };
 
 export default Cart;
+
+// the cart
