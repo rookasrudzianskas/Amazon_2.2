@@ -1,32 +1,25 @@
 import React, {useState} from 'react';
 
-const CartSection = () => {
+const CartSection = ({image, title, price, brand}) => {
 
     const [count, setCount] = useState(0);
 
     return (
         <div>
-            <h1 className="text-gray-400 text-3xl mb-6 font-bold">Shopping Cart</h1>
 
-            <div className="flex flex-row font-bold text-gray-400">
-                <h2 className="flex flex-grow">Product</h2>
-                <h2 className="w-48">Count</h2>
-                <h2 className="w-48">Total Cost</h2>
-                <span className="w-10"/>
-            </div>
 
             <div className="mt-5 ">
                 <div className="flex flex-row items-center ">
                     <div className="w-40 h-32 bg-white p-4 flex items-center justify-center rounded-lg ">
-                        <img className="w-full h-full object-contain"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwimt_bQG_EXqDOLO8hnBCrj_Ma5_Bju_cHg&usqp=CAU" alt=""/>
+                        <img className="w-full h-full object-contain"  src={image} alt=""/>
                     </div>
                 <div className="ml-5 flex-grow">
                     <div className="font-bold text-sm text-gray-600">
-                        Apple Macbook 15.5 inch
+                        {title}
                     </div>
 
                     <div className="text-sm text-gray-400">
-                        Apple
+                        {brand}
                     </div>
                 </div>
 
@@ -37,7 +30,7 @@ const CartSection = () => {
                 </div>
 
                 <div className="w-48 font-bold text-gray-400">
-                    $1,399.99
+                    ${price}
                 </div>
 
                 <div className="delete w-10 font-bold text-gray-200">

@@ -4,6 +4,7 @@ import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Section from "./Section";
 import CartSection from "./cart-section";
+import CartItems from "./cart-items";
 
 const Cart = () => {
     return (
@@ -22,7 +23,7 @@ const Cart = () => {
                     <Sidebar />
                 </div>
                 <div className="flex-1 p-6 bg-gray-100">
-                    <CartSection />
+                    <CartItems />
 
 
                 </div>
