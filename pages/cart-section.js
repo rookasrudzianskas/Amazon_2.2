@@ -30,9 +30,9 @@ const CartSection = () => {
                 </div>
 
                 <div className="w-48 flex items-center">
-                    <h4 className="" onClick={() => setCount(count - 1)}>◀️️</h4>
-                    <h4 className="text-gray-400">x{count < 0 ? "0" : count}</h4>
-                    <h4 className="" onClick={() => setCount(count + 1)}>▶</h4>
+                    <h4 className="font-bold text-gray-400" onClick={() => setCount(count - 1)}>◀️️</h4>
+                    <h4 className="text-gray-400"> x{count < 0 ? "0" : count}</h4>
+                    <h4 className="font-bold text-gray-400" onClick={() => setCount(count + 1)}>▶</h4>
                 </div>
 
                 <div className="delete">
