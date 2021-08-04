@@ -8,7 +8,7 @@ const FooterCart = () => {
                 <div className="text-3xl font-bold text-gray-600">$1,789.00</div>
             </div>
 
-            <div className="">
+            <div className="w-56 flex items-center bg-yellow-500 justify-center rounded-lg ml-5 text-white font-bold hover:bg-yellow-600 cursor-pointer duration-200">
                 Complete Order
             </div>
         </div>
