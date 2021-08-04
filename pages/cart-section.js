@@ -40,7 +40,7 @@ const CartSection = () => {
                 </div>
 
                 <div className="delete w-10 font-bold text-gray-200">
-                    <h4 className="text-gray-200 cursor-pointer">❌</h4>
+                    <h4 className="text-gray-200 cursor-pointer hover:bg-gray-400 w-6 h-6 flex items-center justify-center duration-200 rounded-lg">❌</h4>
                 </div>
 
                 </div>
