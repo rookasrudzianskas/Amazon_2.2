@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 const CartSection = () => {
 
     const [count, setCount] = useState(null);
-    console.log(count);
+
     return (
         <div>
             <h1 className="text-gray-400 text-3xl mb-6 font-bold">Shopping Cart</h1>
@@ -29,10 +29,10 @@ const CartSection = () => {
                     </div>
                 </div>
 
-                <div className="w-48 flex items-center">
-                    <h4 className="font-bold text-gray-400" onClick={() => setCount(count - 1)}>◀️️</h4>
+                <div className="w-48 flex items-center cursor-pointer">
+                    <h4 className="font-bold text-white h-6 w-6 flex items-center justify-center mr-2 rounded-lg bg-gray-400" onClick={() => setCount(count - 1)}>◀️️</h4>
                     <h4 className="text-gray-400"> x{count < 0 ? "0" : count}</h4>
-                    <h4 className="font-bold text-gray-400" onClick={() => setCount(count + 1)}>▶</h4>
+                    <h4 className="font-bold text-white h-6 w-6 flex items-center justify-center ml-2 rounded-lg bg-gray-400" onClick={() => setCount(count + 1)}>▶</h4>
                 </div>
 
                 <div className="delete">
