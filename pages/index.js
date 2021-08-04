@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import React from "react";
-import Header from "../src/components/Header";
+import Header from "../src/Header";
 import Sidebar from "../src/components/Sidebar";
 import Section from "../src/components/Section";
 import Main from "./main";
