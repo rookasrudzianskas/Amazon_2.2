@@ -16,12 +16,12 @@ const CartSection = () => {
                     <div className="w-40 h-32 bg-white p-4 flex items-center justify-center rounded-lg">
                         <img className="w-full h-full object-contain"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwimt_bQG_EXqDOLO8hnBCrj_Ma5_Bju_cHg&usqp=CAU" alt=""/>
                     </div>
-                <div className="">
-                    <div className="">
+                <div className="ml-5">
+                    <div className="font-bold text-sm text-gray-600">
                         Apple Macbook 15.5 inch
                     </div>
 
-                    <div>
+                    <div className="text-sm text-gray-400">
                         Apple
                     </div>
                 </div>
