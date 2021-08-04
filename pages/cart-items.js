@@ -1,5 +1,6 @@
 import React from 'react';
 import CartSection from "./cart-section";
+import FooterCart from "./FooterCart";
 
 const CartItems = () => {
     return (
@@ -14,7 +15,11 @@ const CartItems = () => {
             </div>
 
             <CartSection image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwimt_bQG_EXqDOLO8hnBCrj_Ma5_Bju_cHg&usqp=CAU" title="Apple Macbook 15.5 inch" brand="Apple" price="1,499.99" />
-            <CartSection image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwimt_bQG_EXqDOLO8hnBCrj_Ma5_Bju_cHg&usqp=CAU" title="Apple Macbook 15.5 inch" brand="Apple" price="1,499.99" />
+            <CartSection image="https://m.media-amazon.com/images/I/61-PblYntsL._AC_SL1500_.jpg" title="Nintendo Switch 2020 15 inch" brand="Nintendo" price="1,499.99" />
+
+            <div>
+                <FooterCart />
+            </div>
         </div>
     );
 };
