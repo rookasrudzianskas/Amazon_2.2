@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 const CartSection = () => {
 
-    const [count, setCount] = useState(null);
+    const [count, setCount] = useState(0);
 
     return (
         <div>
@@ -12,14 +12,15 @@ const CartSection = () => {
                 <h2 className="flex flex-grow">Product</h2>
                 <h2 className="w-48">Count</h2>
                 <h2 className="w-48">Total Cost</h2>
+                <span className="w-10"/>
             </div>
 
-            <div className="mt-5">
-                <div className="flex flex-row items-center">
-                    <div className="w-40 h-32 bg-white p-4 flex items-center justify-center rounded-lg">
+            <div className="mt-5 ">
+                <div className="flex flex-row items-center ">
+                    <div className="w-40 h-32 bg-white p-4 flex items-center justify-center rounded-lg ">
                         <img className="w-full h-full object-contain"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwimt_bQG_EXqDOLO8hnBCrj_Ma5_Bju_cHg&usqp=CAU" alt=""/>
                     </div>
-                <div className="ml-5">
+                <div className="ml-5 flex-grow">
                     <div className="font-bold text-sm text-gray-600">
                         Apple Macbook 15.5 inch
                     </div>
