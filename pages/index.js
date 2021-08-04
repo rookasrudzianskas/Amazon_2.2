@@ -22,7 +22,14 @@ export default function Home() {
             <link rel="icon" href="/amazon-2.png"/>
         </Head>
 
-       <Main />
+        <div>
+            <Main />
+        </div>
+
+
+        <div>
+
+        </div>
     </div>
   )
 }
