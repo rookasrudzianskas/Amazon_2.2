@@ -10,6 +10,22 @@ const CartSection = () => {
                 <h2 className="w-48">Count</h2>
                 <h2 className="w-48">Total Cost</h2>
             </div>
+
+            <div className="">
+
+                <div className="">
+
+                </div>
+
+                <div className="">
+
+                </div>
+
+                <div className="">
+
+                </div>
+
+            </div>
         </div>
     );
 };
