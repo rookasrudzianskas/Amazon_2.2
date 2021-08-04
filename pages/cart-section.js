@@ -30,9 +30,9 @@ const CartSection = () => {
                 </div>
 
                 <div className="w-48 flex items-center cursor-pointer">
-                    <h4 className="font-bold text-white h-6 w-6 flex items-center justify-center mr-2 rounded-lg bg-gray-400" onClick={() => setCount(count - 1)}>◀️️</h4>
+                    <h4 className="font-bold text-white h-6 w-6 flex items-center justify-center mr-2 rounded-lg bg-gray-400 hover:bg-gray-200 duration-200" onClick={() => setCount(count - 1)}>◀️️</h4>
                     <h4 className="text-gray-400"> x{count < 0 ? "0" : count}</h4>
-                    <h4 className="font-bold text-white h-6 w-6 flex items-center justify-center ml-2 rounded-lg bg-gray-400" onClick={() => setCount(count + 1)}>▶</h4>
+                    <h4 className="font-bold text-white h-6 w-6 flex items-center justify-center ml-2 rounded-lg bg-gray-400 hover:bg-gray-200 duration-200" onClick={() => setCount(count + 1)}>▶</h4>
                 </div>
 
                 <div className="delete">
