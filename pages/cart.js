@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from "next/head";
-import Header from "../src/Header";
+import Header from "./Header";
 
 const Cart = () => {
     return (
