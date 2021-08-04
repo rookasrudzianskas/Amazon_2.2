@@ -1,11 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
+import {useRouter} from "next/router";
+
 
 const Header = () => {
+
+    const router = useRouter()
+
     return (
        <div>
            <div className="h-16 bg-gray-900 flex flex-row items-center">
-               <div className="w-1/5 h-16 ml-10 pt-1">
+               <div className="w-1/5 h-16 ml-10 pt-1 cursor-pointer" onClick={() => router.push('/')}>
                    <img className="w-28 h-16 object-contain" src="https://www.pinclipart.com/picdir/big/57-576184_view-our-amazon-storefront-amazon-logo-white-png.png" />
                </div>
 
@@ -18,7 +23,7 @@ const Header = () => {
                    </svg>
                </div>
 
-               <div className="bg-yellow-500 h-9 w-10 items-center flex rounded-r-xl">
+               <div className="bg-yellow-500 h-9 w-10 items-center flex rounded-r-xl hover:bg-yellow-600 duration-200 cursor-pointer">
                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="white">
                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                    </svg>
@@ -34,8 +39,8 @@ const Header = () => {
 
                    {/*orange box*/}
 
-                   <div className="relative text-gray-600 h-10 w-10 bg-yellow-500 flex items-center justify-center rounded-xl">
-                       <div className="absolute -top-1 -right-1 bg-white w-4 h-4 rounded-full flex items-center justify-center border-1 border-black solid">1</div>
+                   <div className="relative text-gray-600 h-10 w-10 bg-yellow-500 flex items-center justify-center rounded-xl cursor-pointer hover:bg-yellow-600 duration-200" onClick={() =>  router.push('/cart')}>
+                       <div className="absolute -top-1 -right-1 bg-white w-4 h-4 rounded-full flex items-center justify-center border-1 border-black solid text-sm">1</div>
                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                        </svg>
