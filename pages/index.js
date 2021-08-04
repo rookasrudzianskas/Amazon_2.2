@@ -249,3 +249,5 @@ export default function Home() {
     </div>
   )
 }
+
+// now goes the cart page
