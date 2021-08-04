@@ -9,7 +9,7 @@ const CartSection = ({image, title, price, brand}) => {
 
 
             <div className="mt-5 ">
-                <div className="flex flex-row items-center ">
+                <div className="flex flex-row items-center  border-b hover:bg-gray-200 rounded-lg shadow-md duration-200 cursor-pointer">
                     <div className="w-40 h-32 bg-white p-4 flex items-center justify-center rounded-lg ">
                         <img className="w-full h-full object-contain"  src={image} alt=""/>
                     </div>
