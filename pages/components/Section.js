@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import db from "../../firebase";
 
 const Section = () => {
 
@@ -7,6 +8,13 @@ const Section = () => {
 
 
     // this is firebase stuff
+
+
+    useEffect(() => {
+        db.collection('items').get().then(() => {
+
+        })
+    }, []);
 
     return (
         <div>
