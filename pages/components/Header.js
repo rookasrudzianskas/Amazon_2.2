@@ -13,11 +13,6 @@ const Header = () => {
         db.collection('items').get().then((snapshot) => {
             setItems(snapshot.docs.map(doc => ({
                 id: doc.id,
-                image: doc.data().image,
-                name: doc.data().title,
-                make: doc.data().brand,
-                rating: doc.data().rating,
-                price: doc.data().price,
             })));
         })
     }, []);
