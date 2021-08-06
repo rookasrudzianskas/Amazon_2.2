@@ -11,22 +11,18 @@ const Section = () => {
 
     const [items, setItems] = useState([]);
     // console.log("🚀", items)
+    console.log("Array of ", items)
 
     useEffect(() => {
         db.collection('items').get().then((snapshot) => {
-            snapshot.forEach((doc) => {
-                // we get all the items from the firebase
-                // console.log(`${doc.id} => ${doc.data()}`)
-                setItems({
-                    id: doc.id,
-                    image: doc.data().image,
-                    name: doc.data().title,
-                    make: doc.data().brand,
-                    rating: doc.data().rating,
-                    price: doc.data().price,
-
-                });
-            })
+            setItems(snapshot.docs.map(doc => ({
+                id: doc.id,
+                image: doc.data().image,
+                name: doc.data().title,
+                make: doc.data().brand,
+                rating: doc.data().rating,
+                price: doc.data().price,
+            })));
         })
     }, []);
 
@@ -131,9 +127,8 @@ const Section = () => {
             <div className="main-section-deals">
                 <h1 className="text-2xl font-bold text-gray-700 mb-5 mt-10">Hot Deals 🚀</h1>
 
-                {items.map(item => (
+                {items.map((item) => (
                 <div className="flex ">
-                    ROkas
                     {/*<div className="main-product mr-5">*/}
                     {/*    <div className="product-image w-48 h-52 bg-white rounded-lg flex items-center justify-center">*/}
                     {/*        <img src="https://m.media-amazon.com/images/I/61-PblYntsL._AC_SL1500_.jpg" className="p-4" alt=""/>*/}
