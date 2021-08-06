@@ -11,8 +11,10 @@ const Section = () => {
 
 
     useEffect(() => {
-        db.collection('items').get().then(() => {
-
+        db.collection('items').get().then((snapshot) => {
+            snapshot.forEach((doc) => {
+                console.log(snapshot)
+            })
         })
     }, []);
 
