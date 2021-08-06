@@ -12,15 +12,9 @@ const firebaseConfig = {
 };
 
 // initialized
-let firebaseApp;
+const app = !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app();
 
-if(firebaseApp) {
-    return;
-} else {
-
-    firebaseApp = firebase.initializeApp(firebaseConfig);
-}
-const db = firebaseApp.firestore();
+const db = app.firestore();
 const auth = firebase.auth();
 const provider = new firebase.auth.GoogleAuthProvider();
 
