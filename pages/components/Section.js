@@ -15,6 +15,13 @@ const Section = () => {
     // console.log("🚀", items)
     console.log("Array of ", items)
 
+    function getRandomNumberBetween(min,max){
+        return Math.floor(Math.random()*(max-min+1)+min);
+    }
+
+    // const min = 1;
+    // const max = 5;
+
     useEffect(() => {
         db.collection('items').get().then((snapshot) => {
             setItems(snapshot.docs.map(doc => ({
@@ -145,7 +152,7 @@ const Section = () => {
                         </div>
 
                         <div className="product-rating text-yellow-300 my-1">
-                            {Array(5).fill().map((_, i) => (
+                            {Array(getRandomNumberBetween(1,6)).fill().map((_, i) => (
                                 <StarIcon key={i} className="h-5 text-yellow-500" />
                             ))}
                         </div>
