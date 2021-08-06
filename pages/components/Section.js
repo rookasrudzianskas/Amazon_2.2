@@ -268,3 +268,5 @@ const Section = () => {
 };
 
 export default Section;
+
+// firebase integrated
