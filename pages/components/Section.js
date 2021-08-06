@@ -122,6 +122,10 @@ const Section = () => {
                         <div className="product-price font-bold text-gray-700 text-lg">
                             $4567.000
                         </div>
+
+                        <div className="h-9 w-32 text-md  bg-yellow-500 flex items-center justify-center text-white rounded-lg hover:bg-yellow-600 cursor-pointer duration-200">
+                            Add to the cart
+                        </div>
                     </div>
 
                     <div className="main-product ">
@@ -142,6 +146,10 @@ const Section = () => {
 
                         <div className="product-price font-bold text-gray-700 text-lg">
                             $467.000
+                        </div>
+
+                        <div className="h-8 w-32 text-md  bg-yellow-500 flex items-center justify-center text-white rounded-lg hover:bg-yellow-600 cursor-pointer duration-200">
+                            Add to the cart
                         </div>
                     </div>
 
@@ -164,6 +172,10 @@ const Section = () => {
                         <div className="product-price font-bold text-gray-700 text-lg">
                             $4567.000
                         </div>
+
+                        <div className="h-8 w-32 text-md  bg-yellow-500 flex items-center justify-center text-white rounded-lg hover:bg-yellow-600 cursor-pointer duration-200">
+                            Add to the cart
+                        </div>
                     </div>
 
                     <div className="main-product ">
@@ -185,6 +197,10 @@ const Section = () => {
                         <div className="product-price font-bold text-gray-700 text-lg">
                             $467.000
                         </div>
+
+                        <div className="h-8 w-32 text-md  bg-yellow-500 flex items-center justify-center text-white rounded-lg hover:bg-yellow-600 cursor-pointer duration-200">
+                            Add to the cart
+                        </div>
                     </div>
 
                     <div className="main-product mr-5">
@@ -205,6 +221,10 @@ const Section = () => {
 
                         <div className="product-price font-bold text-gray-700 text-lg">
                             $4577.000
+                        </div>
+
+                        <div className="h-8 w-32 text-md  bg-yellow-500 flex items-center justify-center text-white rounded-lg hover:bg-yellow-600 cursor-pointer duration-200">
+                            Add to the cart
                         </div>
                     </div>
 
