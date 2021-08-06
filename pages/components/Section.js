@@ -13,7 +13,8 @@ const Section = () => {
     useEffect(() => {
         db.collection('items').get().then((snapshot) => {
             snapshot.forEach((doc) => {
-                console.log(snapshot)
+                // we get all the items from the firebase
+                console.log(`${doc.id} => ${doc.data()}`)
             })
         })
     }, []);
