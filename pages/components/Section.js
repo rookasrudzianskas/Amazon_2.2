@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import db from "../../firebase";
 
 const Section = () => {
@@ -9,12 +9,21 @@ const Section = () => {
 
     // this is firebase stuff
 
+    const [items, setItems] = useState([]);
 
     useEffect(() => {
         db.collection('items').get().then((snapshot) => {
             snapshot.forEach((doc) => {
                 // we get all the items from the firebase
                 console.log(`${doc.id} => ${doc.data()}`)
+                setItems({
+                    id: doc.id,
+                    image: doc.data().image,
+                    name: doc.data().title,
+                    make: doc.data().brand,
+                    rating: doc.data().rating,
+
+                })
             })
         })
     }, []);
