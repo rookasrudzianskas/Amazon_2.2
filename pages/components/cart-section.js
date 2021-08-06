@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const CartSection = ({image, title, price, brand}) => {
+const CartSection = ({image, title, price, brand, name}) => {
 
     const [count, setCount] = useState(0);
 
@@ -15,7 +15,7 @@ const CartSection = ({image, title, price, brand}) => {
                     </div>
                 <div className="ml-5 flex-grow">
                     <div className="font-bold text-sm text-gray-600">
-                        {title}
+                        {name}
                     </div>
 
                     <div className="text-sm text-gray-400">
