@@ -133,7 +133,7 @@ const Section = () => {
                 <div className="flex ">
                     <div className="main-product mr-5">
                         <div className="product-image w-48 h-52 bg-white rounded-lg flex items-center justify-center">
-                            <Image src={item.image} width="10" height="10" className="p-4" alt=""/>
+                            <Image src={item.image} width="180" height="155" className="p-4 object-contain" alt=""/>
                         </div>
 
                         <div className="product-name text-gray-700 font-bold mt-2 text-sm">
