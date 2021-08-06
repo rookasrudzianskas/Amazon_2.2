@@ -1,13 +1,16 @@
 import React from 'react';
 import Image from "next/image";
 import StarIcon from "@material-ui/icons/Star";
-import {addToBasket} from "../../slices/basketSlice";
-import {useDispatch} from "react-redux";
+import {addToBasket, selectItems} from "../../slices/basketSlice";
+import {useDispatch, useSelector} from "react-redux";
 
 const Product = ({id, name, price, image, rating, make }) => {
 
+    const items = useSelector(selectItems);
+
 
     const addItemToBasket = () => {
+
         const product = {
             id,
             image,
