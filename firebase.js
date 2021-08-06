@@ -11,3 +11,4 @@ const firebaseConfig = {
     measurementId: "G-8Q014RDM19"
 };
 
+// initialized
