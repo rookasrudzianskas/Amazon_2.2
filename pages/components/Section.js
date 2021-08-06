@@ -7,11 +7,6 @@ import {addToBasket} from "../../slices/basketSlice";
 
 
 const Section = () => {
-
-
-
-
-
     // this is firebase stuff
 
     const [items, setItems] = useState([]);

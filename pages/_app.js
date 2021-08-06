@@ -5,10 +5,11 @@ import {store} from "../app/store";
 
 
 function MyApp({ Component, pageProps }) {
+  return (
   <Provider store={store}>
-    return <Component {...pageProps} />
+    <Component {...pageProps} />
   </Provider>
-
+  )
 }
 
-export default MyApp
+export default MyApp;
