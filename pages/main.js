@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from "./Header";
-import Sidebar from "./Sidebar";
-import Section from "./Section";
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
+import Section from "./components/Section";
 import {useRouter} from "next/router";
 
 const Main = () => {

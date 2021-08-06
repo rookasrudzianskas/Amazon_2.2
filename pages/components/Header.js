@@ -39,6 +39,7 @@ const Header = () => {
 
                    {/*orange box*/}
 
+                   {/* this is card icon*/}
                    <div className="relative text-gray-600 h-10 w-10 bg-yellow-500 flex items-center justify-center rounded-xl cursor-pointer hover:bg-yellow-600 duration-200" onClick={() =>  router.push('/cart')}>
                        <div className="absolute -top-1 -right-1 bg-white w-4 h-4 rounded-full flex items-center justify-center border-1 border-black solid text-sm">1</div>
                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

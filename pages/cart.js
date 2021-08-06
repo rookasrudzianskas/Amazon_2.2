@@ -1,10 +1,10 @@
 import React from 'react';
 import Head from "next/head";
-import Header from "./Header";
-import Sidebar from "./Sidebar";
-import Section from "./Section";
-import CartSection from "./cart-section";
-import CartItems from "./cart-items";
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
+import Section from "./components/Section";
+import CartSection from "./components/cart-section";
+import CartItems from "./components/cart-items";
 
 const Cart = () => {
     return (
