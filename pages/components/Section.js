@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import db from "../../firebase";
-import Image from "next/image"
+import Image from "next/image";
+import StarIcon from '@material-ui/icons/Star';
 
 const Section = () => {
 
@@ -137,18 +138,20 @@ const Section = () => {
                         </div>
 
                         <div className="product-name text-gray-700 font-bold mt-2 text-sm">
-                            Nintendo Switch(2020)
+                            {item.name}
                         </div>
                         <div className="product-make text-green-700 font-bold">
-                            nintendo Inc.
+                            {item.make}
                         </div>
 
                         <div className="product-rating text-yellow-300 my-1">
-                            ⭐⭐⭐⭐⭐⭐ 6.5
+                            {Array(5).fill().map((_, i) => (
+                                <StarIcon key={i} className="h-5 text-yellow-500" />
+                            ))}
                         </div>
 
                         <div className="product-price font-bold text-gray-700 text-lg">
-                            $4567.000
+                            ${item.price}
                         </div>
 
                         <div className="h-9 w-32 text-md  bg-yellow-500 flex items-center justify-center text-white rounded-lg hover:bg-yellow-600 cursor-pointer duration-200">
