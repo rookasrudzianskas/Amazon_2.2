@@ -22,6 +22,8 @@ const Header = () => {
         })
     }, []);
 
+    // firebase is working on
+
     return (
        <div>
            <div className="h-16 bg-gray-900 flex flex-row items-center">
