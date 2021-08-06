@@ -1,9 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import db from "../../firebase";
-import Image from "next/image";
-import StarIcon from '@material-ui/icons/Star';
-import {useDispatch} from "react-redux";
-import {addToBasket} from "../../slices/basketSlice";
 import Product from "./Product";
 
 
