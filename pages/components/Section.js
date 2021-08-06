@@ -10,20 +10,22 @@ const Section = () => {
     // this is firebase stuff
 
     const [items, setItems] = useState([]);
+    console.log("🚀", items)
 
     useEffect(() => {
         db.collection('items').get().then((snapshot) => {
             snapshot.forEach((doc) => {
                 // we get all the items from the firebase
-                console.log(`${doc.id} => ${doc.data()}`)
+                // console.log(`${doc.id} => ${doc.data()}`)
                 setItems({
                     id: doc.id,
                     image: doc.data().image,
                     name: doc.data().title,
                     make: doc.data().brand,
                     rating: doc.data().rating,
+                    price: doc.data().price,
 
-                })
+                });
             })
         })
     }, []);
