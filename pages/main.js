@@ -2,8 +2,12 @@ import React from 'react';
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Section from "./Section";
+import {useRouter} from "next/router";
 
 const Main = () => {
+
+
+    const router = useRouter();
     return (
         <div className="">
            <Header />
