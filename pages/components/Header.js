@@ -2,20 +2,23 @@ import React, {useEffect, useState} from 'react';
 import Image from 'next/image';
 import {useRouter} from "next/router";
 import db from "../../firebase";
+import {useSelector} from "react-redux";
+import {selectItems} from "../../slices/basketSlice";
 
 
 const Header = () => {
-    const [items, setItems] = useState([]);
+    const items = useSelector(selectItems);
+
 
     const router = useRouter();
 
-    useEffect(() => {
-        db.collection('items').get().then((snapshot) => {
-            setItems(snapshot.docs.map(doc => ({
-                id: doc.id,
-            })));
-        })
-    }, []);
+    // useEffect(() => {
+    //     db.collection('items').get().then((snapshot) => {
+    //         setItems(snapshot.docs.map(doc => ({
+    //             id: doc.id,
+    //         })));
+    //     })
+    // }, []);
 
     // firebase is working on
 
