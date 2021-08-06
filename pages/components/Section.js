@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import db from "../../firebase";
+import Image from "next/image"
 
 const Section = () => {
 
@@ -127,34 +128,36 @@ const Section = () => {
             <div className="main-section-deals">
                 <h1 className="text-2xl font-bold text-gray-700 mb-5 mt-10">Hot Deals 🚀</h1>
 
+                <div className="flex flex-row">
                 {items.map((item) => (
                 <div className="flex ">
-                    {/*<div className="main-product mr-5">*/}
-                    {/*    <div className="product-image w-48 h-52 bg-white rounded-lg flex items-center justify-center">*/}
-                    {/*        <img src="https://m.media-amazon.com/images/I/61-PblYntsL._AC_SL1500_.jpg" className="p-4" alt=""/>*/}
-                    {/*    </div>*/}
+                    <div className="main-product mr-5">
+                        <div className="product-image w-48 h-52 bg-white rounded-lg flex items-center justify-center">
+                            <Image src={item.image} width="10" height="10" className="p-4" alt=""/>
+                        </div>
 
-                    {/*    <div className="product-name text-gray-700 font-bold mt-2 text-sm">*/}
-                    {/*        Nintendo Switch(2020)*/}
-                    {/*    </div>*/}
-                    {/*    <div className="product-make text-green-700 font-bold">*/}
-                    {/*        nintendo Inc.*/}
-                    {/*    </div>*/}
+                        <div className="product-name text-gray-700 font-bold mt-2 text-sm">
+                            Nintendo Switch(2020)
+                        </div>
+                        <div className="product-make text-green-700 font-bold">
+                            nintendo Inc.
+                        </div>
 
-                    {/*    <div className="product-rating text-yellow-300 my-1">*/}
-                    {/*        ⭐⭐⭐⭐⭐⭐ 6.5*/}
-                    {/*    </div>*/}
+                        <div className="product-rating text-yellow-300 my-1">
+                            ⭐⭐⭐⭐⭐⭐ 6.5
+                        </div>
 
-                    {/*    <div className="product-price font-bold text-gray-700 text-lg">*/}
-                    {/*        $4567.000*/}
-                    {/*    </div>*/}
+                        <div className="product-price font-bold text-gray-700 text-lg">
+                            $4567.000
+                        </div>
 
-                    {/*    <div className="h-9 w-32 text-md  bg-yellow-500 flex items-center justify-center text-white rounded-lg hover:bg-yellow-600 cursor-pointer duration-200">*/}
-                    {/*        Add to the cart*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
+                        <div className="h-9 w-32 text-md  bg-yellow-500 flex items-center justify-center text-white rounded-lg hover:bg-yellow-600 cursor-pointer duration-200">
+                            Add to the cart
+                        </div>
+                    </div>
                 </div>
                     ))}
+                </div>
 
 
             </div>
