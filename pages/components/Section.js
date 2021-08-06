@@ -2,6 +2,9 @@ import React, {useEffect, useState} from 'react';
 import db from "../../firebase";
 import Image from "next/image";
 import StarIcon from '@material-ui/icons/Star';
+import {useDispatch} from "react-redux";
+import {addToBasket} from "../../slices/basketSlice";
+
 
 const Section = () => {
 
@@ -18,6 +21,7 @@ const Section = () => {
     function getRandomNumberBetween(min,max){
         return Math.floor(Math.random()*(max-min+1)+min);
     }
+    const dispatch = useDispatch();
 
     // const min = 1;
     // const max = 5;
@@ -35,8 +39,17 @@ const Section = () => {
         })
     }, []);
 
-    const addToTheCart = () => {
+    const addItemToBasket = () => {
+        const product = {
+            id,
+            image,
+            name,
+            make,
+            rating,
+            price,
+        };
 
+        dispatch(addToBasket((product)));
     }
 
 
@@ -167,7 +180,7 @@ const Section = () => {
                             ${item.price}
                         </div>
 
-                        <div onClick={addToTheCart} className="h-9 w-32 text-md  bg-yellow-500 flex items-center justify-center text-white rounded-lg hover:bg-yellow-600 cursor-pointer duration-200">
+                        <div onClick={addItemToBasket} className="h-9 w-32 text-md  bg-yellow-500 flex items-center justify-center text-white rounded-lg hover:bg-yellow-600 cursor-pointer duration-200">
                             Add to the cart
                         </div>
                     </div>
