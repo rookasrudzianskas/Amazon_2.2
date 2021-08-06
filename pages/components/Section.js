@@ -1,6 +1,13 @@
 import React from 'react';
 
 const Section = () => {
+
+
+
+
+
+    // this is firebase stuff
+
     return (
         <div>
             <div className="h-44 w-full main-section-banner rounded-lg flex items-end">
